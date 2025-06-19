@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Secret
+metadata:
+  name: rds-secret
+  namespace: three-tier
+stringData:
+  DB_HOST: "<RDS-ENDPOINT>"
+  DB_USER: "admin"
+  DB_PASS: "<YOUR-RDS-PASSWORD>"
+  DB_NAME: "appdb"
